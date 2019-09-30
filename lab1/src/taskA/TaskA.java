@@ -1,4 +1,4 @@
-package com.company;
+package taskA;
 
 public class TaskA {
 	public static void execute()

@@ -1,4 +1,4 @@
-package com.company;
+package TaskC;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -52,7 +52,7 @@ public class Menu {
     public class CommandDeleteRecord extends Command {
         @Override
         public void execute(Table table) {
-            System.out.print("Введите id удаляемой записи:");
+            System.out.println("Введите id удаляемой записи:");
             Scanner in = new Scanner(System.in);
             String id = in.next();
             table.delete(table.find(Table.FIELDS.ID, id));
@@ -61,7 +61,7 @@ public class Menu {
     public class CommandChangeRecord extends Command {
         @Override
         public void execute(Table table) {
-            System.out.print("Введите id удаляемой записи:");
+            System.out.println("Введите id изменяемой записи:");
             Scanner in = new Scanner(System.in);
             int id = in.nextInt();
             System.out.println("Введите данные записи:");
@@ -93,7 +93,7 @@ public class Menu {
     public void run()
     {
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите команду:");
+        System.out.println("Введите команду (ADD / FIND / DELETE / SHOW / ESCAPE):");
         String commandString = in.next();
         while (!commandString.equalsIgnoreCase("escape")){
             try
@@ -103,7 +103,7 @@ public class Menu {
             {
                 System.out.println("Invalid data");
             }
-            System.out.println("Введите команду:");
+            System.out.println("Введите команду (ADD / FIND / DELETE / SHOW / ESCAPE):");
             commandString = in.next();
 
         }

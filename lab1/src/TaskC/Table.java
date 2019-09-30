@@ -1,4 +1,4 @@
-package com.company;
+package TaskC;
 
 import java.util.ArrayList;
 
@@ -60,9 +60,7 @@ public class Table {
             {
                 for (Record record: records)
                 {
-                    System.out.println(value);
-
-                    int id = Integer.getInteger(value);
+                    int id = Integer.parseInt(value);
                     if (record.getId() == id)
                     {
                         return record;
@@ -96,7 +94,7 @@ public class Table {
             {
                 for (Record record: records)
                 {
-                    int year = Integer.getInteger(value);
+                    int year = Integer.parseInt(value);
                     if (record.getYear() == year)
                     {
                         return record;
