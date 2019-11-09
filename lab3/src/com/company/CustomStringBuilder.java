@@ -25,8 +25,7 @@ public class CustomStringBuilder {
     }
     public void undo()
     {
-        if (actions.peek() != null) actions.pop().undo();
-        else actions.pop();
+        if (!actions.empty()) actions.pop().undo();
     }
     public CustomStringBuilder append(boolean b)
     {
@@ -135,27 +134,22 @@ public class CustomStringBuilder {
     }
     public int capacity()
     {
-        actions.push(null);
         return stringBuilder.capacity();
     }
     public char charAt(int index)
     {
-        actions.push(null);
         return stringBuilder.charAt(index);
     }
     public int codePointAt(int index)
     {
-        actions.push(null);
         return stringBuilder.codePointAt(index);
     }
     public int codePointBefore(int index)
     {
-        actions.push(null);
         return stringBuilder.codePointBefore(index);
     }
     public int codePointCount(int beginIndex, int endIndex)
     {
-        actions.push(null);
         return stringBuilder.codePointCount(beginIndex, endIndex);
     }
 
@@ -177,22 +171,18 @@ public class CustomStringBuilder {
     }
     public void ensureCapacity(int minimumCapacity)
     {
-        actions.push(null);
         stringBuilder.ensureCapacity(minimumCapacity);
     }
     public void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)
     {
-        actions.push(null);
         stringBuilder.getChars(srcBegin, srcEnd, dst, dstBegin);
     }
     public int indexOf(String str)
     {
-        actions.push(null);
         return stringBuilder.indexOf(str);
     }
     public int indexOf(String str, int fromIndex)
     {
-        actions.push(null);
         return stringBuilder.indexOf(str, fromIndex);
     }
     public CustomStringBuilder insert(int offset, boolean b)
@@ -290,29 +280,25 @@ public class CustomStringBuilder {
     }
     public int lastIndexOf(String str)
     {
-        actions.push(null);
         return stringBuilder.lastIndexOf(str);
     }
     public int lastIndexOf(String str, int fromIndex)
     {
-        actions.push(null);
         return stringBuilder.lastIndexOf(str, fromIndex);
     }
     public int length()
     {
-        actions.push(null);
         return stringBuilder.length();
     }
     public int offsetByCodePoints(int index, int codePointOffset)
     {
-        actions.push(null);
         return stringBuilder.offsetByCodePoints(index, codePointOffset);
     }
     public CustomStringBuilder replace(int start, int end, String str)
     {
         String replaced = stringBuilder.substring(start, end);
         Action action = () -> stringBuilder.replace(start, end, replaced);
-        actions.push(null);
+        actions.push(action);
         stringBuilder.replace(start, end, replaced);
         return this;
     }
@@ -320,7 +306,7 @@ public class CustomStringBuilder {
     {
         char symbol = stringBuilder.charAt(index);
         Action action = () -> stringBuilder.setCharAt(index, symbol);
-        actions.push(null);
+        actions.push(action);
         stringBuilder.setCharAt(index, ch);
     }
     public void setLength(int newLength)
@@ -332,27 +318,22 @@ public class CustomStringBuilder {
     }
     public CharSequence subSequence(int start, int end)
     {
-        actions.push(null);
         return stringBuilder.subSequence(start, end);
     }
     public String substring(int start)
     {
-        actions.push(null);
         return stringBuilder.substring(start);
     }
     public String substring(int start, int end)
     {
-        actions.push(null);
         return stringBuilder.substring(start, end);
     }
     public String toString()
     {
-        actions.push(null);
         return stringBuilder.toString();
     }
     public void trimToSize()
     {
-        actions.push(null);
         stringBuilder.trimToSize();
     }
     private StringBuilder stringBuilder;

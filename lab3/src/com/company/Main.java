@@ -7,10 +7,10 @@ public class Main {
         CustomStringBuilder stringBuilder = new CustomStringBuilder("обычная строка");;
         stringBuilder.append("новая обычная строка");
         stringBuilder.insert(14, " + ");
-        //stringBuilder.undo();
-        //stringBuilder.undo();
+
         System.out.println(stringBuilder.toString());
         System.out.println("3x undo:");
+        // последнее undo() не делает ничего
         stringBuilder.undo();
         stringBuilder.undo();
         stringBuilder.undo();
