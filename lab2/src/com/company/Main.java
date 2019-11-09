@@ -35,7 +35,7 @@ public class Main {
 
         SortedSet<Animal> animals = new TreeSet<Animal>(comparator);
         try {
-            FileReader inputFile = new FileReader("inut.txt");
+            FileReader inputFile = new FileReader("input.txt");
             Scanner in = new Scanner(inputFile);
             while (in.hasNextLine())
             {
