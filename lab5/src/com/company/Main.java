@@ -7,18 +7,19 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        HashMap<String, String> properties;
-        try {
-            System.out.println("Введите путь до файла:");
-            String path = in.next();
-            System.out.println("Введите символ разделителя:");
-            String delimiter = in.next();
-            properties = PropertiesParser.parse(path, delimiter);
-        }
-        catch (Exception e) {
-            System.out.println(e.getMessage());
+
+        System.out.println("Введите путь до файла:");
+        String path = in.next();
+        System.out.println("Введите символ разделителя:");
+        String delimiter = in.next();
+
+        HashMap<String, String> properties = PropertiesParser.parse(path, delimiter);
+        if (properties == null)
+        {
+            System.out.println("Ошибка во время обработки properties-файла.\n");
             return;
         }
+
         System.out.println("Введите значение ключа:");
         while (in.hasNext())
         {

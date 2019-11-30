@@ -2,31 +2,42 @@ package com.company;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class PropertiesParser {
-    public static HashMap<String, String> parse(String path, String delimiter) throws Exception {
+    public static HashMap<String, String> parse(String path, String delimiter) {
         HashMap<String, String> results = new HashMap<String, String>();
-        FileReader inputFile = new FileReader(path);
-        Scanner in = new Scanner(inputFile);
-        while(in.hasNext())
+
+        try (FileReader inputFile = new FileReader(path))
         {
-            String key, value;
-            key = in.next();
-            if (!in.hasNext() || !in.next().equals(delimiter))
+            Scanner in = new Scanner(inputFile);
+            while(in.hasNext())
             {
-                throw new Exception("Некорректный формат данных.");
+                String key, value;
+                key = in.next();
+                if (!in.hasNext() || !in.next().equals(delimiter))
+                {
+                    throw new IllegalArgumentException("Некорректный формат данных.");
+                }
+                if (!in.hasNext())
+                {
+                    throw new IllegalArgumentException("Некорректный формат данных.");
+                }
+                value = in.next();
+                results.put(key, value);
             }
-            if (!in.hasNext())
-            {
-                throw new Exception("Некорректный формат данных.");
-            }
-            value = in.next();
-            results.put(key, value);
+            in.close();
+            return results;
+        } catch (IOException e)
+        {
+            System.out.println("Ошибка при работе с файлом.");
+            System.out.println(e.getMessage());
         }
-        in.close();
-        inputFile.close();
-        return results;
+        catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
+        return null;
     }
 }
