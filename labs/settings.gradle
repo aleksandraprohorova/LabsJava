@@ -1,4 +1,0 @@
-include 'lab4'
-include 'lab5_5'
-
-rootProject.name = 'labs'
