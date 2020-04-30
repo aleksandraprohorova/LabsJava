@@ -10,9 +10,9 @@ public class CommandManager {
         Command parse(String[] args);
     }
     public interface Command{
-        String execute(DataBaseManager dataBaseManager);
+        String execute(DataManager dataManager);
     }
-    public static final Command commandInvalid = (DataBaseManager)->{
+    public static final Command commandInvalid = (DataManager)->{
         return "Error occured while parsing command.\n";
     };
 
@@ -28,42 +28,42 @@ public class CommandManager {
         checkArguments(args, 3);
         String title = args[1];
         int price = Integer.parseInt(args[2]);
-        return (DataBaseManager dataBaseManager)->{
-            return dataBaseManager.add(new ProductItem(title, price));
+        return (DataManager dataManager)->{
+            return dataManager.add(new ProductItem(title, price));
         };
     };
     public static final CommandParser parseCommandDelete = (String[] args) -> {
         checkArguments(args, 2);
         String title = args[1];
-        return (DataBaseManager dataBaseManager) -> {
-            return dataBaseManager.delete(title);
+        return (DataManager dataManager) -> {
+            return dataManager.delete(title);
         };
     };
     public static final CommandParser parseCommandShowAll = (String[] args) -> {
         checkArguments(args, 1);
-        return DataBaseManager::showAll;
+        return DataManager::showAll;
     };
     public static final CommandParser parseCommandPrice = (String[] args) -> {
         checkArguments(args, 2);
         String title = args[1];
-        return (DataBaseManager dataBaseManager)->{
-            return dataBaseManager.showPrice(title);
+        return (DataManager dataManager)->{
+            return dataManager.showPrice(title);
         };
     };
     public static final CommandParser parseCommandChangePrice = (String[] args) -> {
         checkArguments(args, 3);
         String title = args[1];
         int newPrice = Integer.parseInt(args[2]);
-        return (DataBaseManager dataBaseManager) -> {
-            return dataBaseManager.changePrice(title, newPrice);
+        return (DataManager dataManager) -> {
+            return dataManager.changePrice(title, newPrice);
         };
     };
     public static final CommandParser parseCommandFilterByPrice = (String[] args) -> {
         checkArguments(args, 3);
         int priceFrom = Integer.parseInt(args[1]);
         int priceTo = Integer.parseInt(args[2]);
-        return (DataBaseManager dataBaseManager) -> {
-            return dataBaseManager.filterByPrice(priceFrom, priceTo);
+        return (DataManager dataManager) -> {
+            return dataManager.filterByPrice(priceFrom, priceTo);
         };
     };
     private final static Map<String, CommandParser> commands = Map.ofEntries(

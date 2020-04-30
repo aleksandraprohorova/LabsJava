@@ -21,7 +21,7 @@ public class Main {
             statement.executeUpdate(sqlQuery);
             statement.close();
 
-            DataBaseManager dataBaseManager = new DataBaseManager(connection, "product");
+            DataBaseManager dataBaseManager = new DataBaseMySqlManager(connection, "product");
             for (int i = 1; i < 11; ++i)
             {
                 dataBaseManager.add(new ProductItem("product" + i, i * 10));
@@ -43,7 +43,7 @@ public class Main {
             initialize(connection);
 
             Scanner in = new Scanner(System.in);
-            DataBaseManager dataBaseManager = new DataBaseManager(connection, "product");
+            DataManager dataBaseManager = new DataBaseMySqlManager(connection, "product");
             dataBaseManager.showAll();
             while(in.hasNextLine())
             {
