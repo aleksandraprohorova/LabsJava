@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="626a2577-2290-4b26-aa1b-ea210fb217a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/lab4/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/lab4/CommandManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/lab4/DataBaseManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/lab4/DataBaseMySqlManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4/src/main/java/lab4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab4/src/main/java/lab4/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab5_5/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab5_5/src/main/java/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/lab5_5">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1Y7rNFAcGDkzT2Q0Nthy5VtXpAx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="labs.lab5_5.main" />
+      <option name="VM_PARAMETERS" value="--module-path /usr/lib/jvm/java-1.11.0-openjdk-amd64/lib/openjfx --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="labs [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Gradle.labs [dependencies]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.labs [dependencies]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="626a2577-2290-4b26-aa1b-ea210fb217a7" name="Default Changelist" comment="" />
+      <created>1582304431592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582304431592</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="455" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582751620101">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state x="455" y="207" key="#com.intellij.execution.impl.EditConfigurationsDialog/83.34.1837.1046@83.34.1837.1046" timestamp="1582751620101" />
+    <state x="616" y="34" width="751" height="1045" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583920023409">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state x="616" y="34" width="751" height="1045" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/83.34.1837.1046@83.34.1837.1046" timestamp="1583920023409" />
+    <state x="731" y="257" width="530" height="598" key="FileChooserDialogImpl" timestamp="1582603543104">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state x="731" y="257" width="530" height="598" key="FileChooserDialogImpl/83.34.1837.1046@83.34.1837.1046" timestamp="1582603543104" />
+    <state width="1781" height="263" key="GridCell.Tab.0.bottom" timestamp="1583920242323">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state width="1781" height="263" key="GridCell.Tab.0.bottom/83.34.1837.1046@83.34.1837.1046" timestamp="1583920242323" />
+    <state width="1781" height="263" key="GridCell.Tab.0.center" timestamp="1583920242321">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state width="1781" height="263" key="GridCell.Tab.0.center/83.34.1837.1046@83.34.1837.1046" timestamp="1583920242321" />
+    <state width="1781" height="263" key="GridCell.Tab.0.left" timestamp="1583920242320">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state width="1781" height="263" key="GridCell.Tab.0.left/83.34.1837.1046@83.34.1837.1046" timestamp="1583920242320" />
+    <state width="1781" height="263" key="GridCell.Tab.0.right" timestamp="1583920242322">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state width="1781" height="263" key="GridCell.Tab.0.right/83.34.1837.1046@83.34.1837.1046" timestamp="1583920242322" />
+    <state x="161" y="70" width="1671" height="971" key="new project wizard" timestamp="1582305442540">
+      <screen x="83" y="34" width="1837" height="1046" />
+    </state>
+    <state x="161" y="70" width="1671" height="971" key="new project wizard/83.34.1837.1046@83.34.1837.1046" timestamp="1582305442540" />
+  </component>
+</project>
